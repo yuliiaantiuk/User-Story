@@ -69,20 +69,17 @@ input[type="text"], input[type="password"]{
     left: -52%;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.valid-tooltip {
+    background-color: #bbb;
+    position: absolute;
+    z-index: 1;
+    top: 30% !important;
+    left: -52%;
 }
 
-
-.tooltiptext::after{
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent #bbb;
+.hoverable:hover .tooltiptext.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .buttons{

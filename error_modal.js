@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const nameModal = document.getElementById("nameModal");
-const passwordModal = document.getElementById("passwordModal");
+    const passwordModal = document.getElementById("passwordModal");
 
 const closes = document.querySelectorAll(".close");
 
