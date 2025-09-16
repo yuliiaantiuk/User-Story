@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Reports have been exported successfully</p>
+            <p>Directory path: C:\Reports_Export</p>
+        </div>
+    </div>
+
+    <div class="data-grid">
+        <div class="tabs">
+            <div role="tablist" class="manual">
+            <button id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-1">
+                <span class="focus">Create Report</span>
+            </button>
+            <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+                <span class="focus">Edit Report</span>
+            </button>
+            <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
+                <span class="focus">Find Report</span>
+            </button>
+            <button id="tab-4" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-4" tabindex="-1">
+                <span class="focus">Export Report</span>
+            </button>
+            <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1">
+                <span class="focus">Account Administration</span>
+            </button>
+            </div>
+        </div>
+
+        <button id="exportBtn" class="primary export-btn">Export Report</button>
+        <div class="table-wrap">
+            <table id="ex-grid" role="grid" aria-labelledby="gridLabel" class="data">
+                <tbody><tr>
+                    <th class="sticky-column">id</th>
+                    <th>Summary</th>
+                    <th>Project</th>
+                    <th>Issue Type</th>
+                    <th>Priority</th>
+                    <th>Affect Version</th>
+                    <th>Fix Version</th>
+                    <th>Reporter</th>
+                    <th>Assignee</th>
+                    <th>Severity</th>
+                    <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Creation Date</th>
+                </tr>
+                <tr>
+                    <td tabindex="-1" class="sticky-column">Bug-101</td>
+                    <td tabindex="-1">Example Summary</td>
+                    <td tabindex="-1">Project Name</td>
+                    <td tabindex="-1">Bug</td>
+                    <td tabindex="-1">High</td>
+                    <td tabindex="-1">1.0</td>
+                    <td tabindex="-1">1.1</td>
+                    <td tabindex="-1">Alice</td>
+                    <td tabindex="-1">Bob</td>
+                    <td tabindex="-1">Critical</td>
+                    <td tabindex="-1">Open</td>
+                    <td tabindex="-1">16.09.2025</td>
+                    <td tabindex="-1">01.09.2025</td>
+                </tr>
+                <tr>
+                    <td tabindex="-1" class="sticky-column">Bug-102</td>
+                    <td tabindex="-1">Example Summary</td>
+                    <td tabindex="-1">Project Name</td>
+                    <td tabindex="-1">Bug</td>
+                    <td tabindex="-1">High</td>
+                    <td tabindex="-1">1.0</td>
+                    <td tabindex="-1">1.1</td>
+                    <td tabindex="-1">Alice</td>
+                    <td tabindex="-1">Bob</td>
+                    <td tabindex="-1">Critical</td>
+                    <td tabindex="-1">Open</td>
+                    <td tabindex="-1">16.09.2025</td>
+                    <td tabindex="-1">01.09.2025</td>
+                </tr>
+                 <tr>
+                    <td tabindex="-1" class="sticky-column">Bug-102</td>
+                    <td tabindex="-1">Example Summary</td>
+                    <td tabindex="-1">Project Name</td>
+                    <td tabindex="-1">Bug</td>
+                    <td tabindex="-1">High</td>
+                    <td tabindex="-1">1.0</td>
+                    <td tabindex="-1">1.1</td>
+                    <td tabindex="-1">Alice</td>
+                    <td tabindex="-1">Bob</td>
+                    <td tabindex="-1">Critical</td>
+                    <td tabindex="-1">Open</td>
+                    <td tabindex="-1">16.09.2025</td>
+                    <td tabindex="-1">01.09.2025</td>
+                </tr>
+                <tr>
+                    <td tabindex="-1" class="sticky-column">Bug-102</td>
+                    <td tabindex="-1">Example Summary</td>
+                    <td tabindex="-1">Project Name</td>
+                    <td tabindex="-1">Bug</td>
+                    <td tabindex="-1">High</td>
+                    <td tabindex="-1">1.0</td>
+                    <td tabindex="-1">1.1</td>
+                    <td tabindex="-1">Alice</td>
+                    <td tabindex="-1">Bob</td>
+                    <td tabindex="-1">Critical</td>
+                    <td tabindex="-1">Open</td>
+                    <td tabindex="-1">16.09.2025</td>
+                    <td tabindex="-1">01.09.2025</td>
+                </tr>
+            </tbody></table></div>
+        </div>
+        <div class="footer">
+            <a href="index.html">Login to Bug Tracker</a>
+            <a href="create.html">Create Account</a>
+            <a href="#">Export Report</a>
+        </div>
+
+        <script src="modal.js"></script>
+</body>
+</html>

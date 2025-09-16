@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Bug Tracker</h1>
+        <p>powered by QA Start Up</p>
+    </div>
+    <form action="#">
+        <div class="input-group tooltip">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="tooltiptext big-tooltip">User Name must be defined with the following rules:<br>
+            - the first character must be a letter<br>
+            - it can contain letters, numbers, underscore, hyphen<br>
+            - the length is between 12 to 20
+            </span>
+        </div>
+        <div class="input-group tooltip">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="tooltiptext big-tooltip">Password must be defined with the following rules:<br>
+            - password length must be at least 12 characters<br>
+            - password must contain number, at least one lower case letter<br>
+            - at least one upper case letter and at least one special character<br>
+            - allowed special characters: !@#$%^&+=<br>
+            </span>
+        </div>
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="input-group buttons">
+            <button class="primary" type="submit">Sign Up</button>
+            <button class="secondary" type="button">Cancel</button>
+        </div>
+    </form>
+    <div class="footer">
+        <a href="index.html">Login to Bug Tracker</a>
+        <a href="#">Create Account</a>
+        <a href="export.html">Export Report</a>
+    </div>
+</body>
+</html>
