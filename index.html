@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="modal" id="nameModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter the user name</p>
+        </div>
+    </div>
+
+    <div class="modal error-modal" id="passwordModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter the password</p>
+        </div>
+    </div>
+
     <div class="header">
         <h1>Bug Tracker</h1>
         <p>powered by QA Start Up</p>
     </div>
-    <form action="#">
+    <form action="#" id="loginForm" novalidate>
         <div class="input-group">
             <label for="username">User Name:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username">
         </div>
         <div class="input-group">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password">
         </div>
         <div class="input-group tooltip">
             <input class="" type="checkbox" id="remember" name="remember">
@@ -26,7 +40,7 @@
             <label for="remember">Keep me signed in</label>
         </div>
         <div class="input-group buttons">
-            <button class="primary" type="submit">Login</button>
+            <button id="submit-btn" class="primary" type="submit">Login</button>
             <button class="secondary" type="button">Cancel</button>
         </div>
     </form>
@@ -35,5 +49,7 @@
         <a href="create.html">Create Account</a>
         <a href="export.html">Export Report</a>
     </div>
+
+    <script src="error_modal.js"></script>
 </body>
 </html>
